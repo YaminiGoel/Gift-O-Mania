@@ -1,0 +1,110 @@
+<html dir="ltr"><head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" type="text/css" href="styling.css">
+        <script src="validate.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="../logo/logo2.ico">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <script src="../jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <style>
+        /* Remove the navbar's default rounded borders and increase the bottom margin */
+        .navbar {
+          margin-bottom: 50px;
+          border-radius: 0;
+        }
+
+        /* Remove the jumbotron's default bottom margin */
+         .jumbotron {
+          margin-bottom: 0;
+          font-family: "Times New Roman", Georgia, Serif;
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+          background-color: #f2f2f2;
+          padding: 25px;
+        }
+       </style>
+    </head>
+    
+    <body contenteditable="true">
+        <div class="jumbotron">
+            <div class="container text-center">
+               <h1>Gift-O-Mania </h1>
+             <p>You Customize, We Personalize</p>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Logo</a>
+          </div>
+          
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="../home.html">Home</a></li>
+              <li><a href="../home.html">products</a></li>
+              <li><a href="../underConst.jsp">Deals</a></li>
+              <li><a href="../underConst.jsp">Stores</a></li>
+              <li><a href="../underConst.jsp">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../logIn/logInForm.html"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+            </ul>
+          </div>
+        </div>
+        </nav>
+        
+        <center>
+            <div>
+            <form action="enterDb.jsp" method="post" onsubmit="return superValidate()">
+               <label for="fName">First Name:</label>
+                <input type="text" id="fName" name="fName">
+                <p id="fNameErr">Invalid first name!</p>
+                <br><br>
+                
+                <label for="lName">Last Name:</label>
+                <input type="text" id="lName" name="lName">
+                <p id="lNameErr">Invalid last name!</p>
+                <br><br>                
+                
+                <label for="eMail">EMail Address:</label>
+                <input type="email" id="eMail" name="eMail">
+                <p id="eMailErr">Invalid eMail Address!</p>
+                <br><br>
+                
+                <label for="telNo">Telephone No.:</label>
+                <input type="tel" id="telNo" name="telNo">
+                <p id="telNoErr">Invalid telephone no.!</p>
+                <br><br>
+                
+                <label for="Email">User Name:</label>
+                <input type="text" id="Email" name="Email">
+                <p id="EmailErr">Email empty!</p>
+                <br><br>
+                
+                <label for="pswd">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:</label>
+                <input type="password" id="pswd" name="pswd">
+                <p id="pswdErr">Password should have atleast 6 characters!</p>
+                <br><br>
+                
+                <input type="submit" value="Submit">
+                
+            </form>
+            </div>
+        </center>
+    
+
+
+</body></html>
